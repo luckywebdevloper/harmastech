@@ -1,38 +1,44 @@
 "use client";
-import Image from "next/image";
+// import Spline from "@splinetool/react-spline";
+// import Image from "next/image";
 import { useState } from "react";
-
+import Lottie from 'react-lottie';
+import  animatedImmage from "../../public/images/animated/animated-image1.json"
 const Hero = () => {
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
   };
-
+  const defaultOptions = {
+    loop: true,
+    autoplay: true, 
+    animationData: animatedImmage,
+   
+  };
   return (
     <>
       <section className="overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
-          <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
+          <div className="flex lg:items-center lg:gap-8 xl:gap-32.5 relative ">
             <div className=" md:w-1/2">
               <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-                🔥 
-                Boost Profits with Precision                                                
+                🔥 Boost Profits with Precision
               </h4>
               <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero ">
-         
-              Maximize ROI with                                                                                            
+                Maximize ROI with
                 <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark ">
-                Algorithms
+                  Algorithms
                 </span>
               </h1>
               <p>
-              Increase profitability with our precise algorithms, designed to capitalize on market opportunities and maximize returns.                                                
+                Increase profitability with our precise algorithms, designed to
+                capitalize on market opportunities and maximize returns.
               </p>
 
               <div className="mt-10">
                 <form onSubmit={handleSubmit}>
-                  <div className="flex flex-wrap gap-5">
+                  <div className="flex flex-wrap gap-5    ">
                     <input
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
@@ -50,13 +56,13 @@ const Hero = () => {
                 </form>
 
                 <p className="mt-5 text-black dark:text-white">
-                  
-                Makes a successful career                                                
+                  Makes a successful career
                 </p>
               </div>
             </div>
 
             {/* <div className="animate_right hidden md:w-1/2 lg:block">
+            
               <div className="relative 2xl:-mr-7.5">
                 <Image
                   src="/images/shape/shape-01.png"
@@ -96,7 +102,15 @@ const Hero = () => {
               </div>
             </div>
              */}
+            <div className="animate_right  h-full hidden md:w-1/2   lg:block">
+            <Lottie options={defaultOptions}
+              height={"100%"}
+              width={"100%"}
+           />
+              {/* <Spline className="  absolute    " scene="https://prod.spline.design/x4qUtwRoRXpDiria/scene.splinecode" /> */}
 
+              
+            </div>
           </div>
         </div>
       </section>
