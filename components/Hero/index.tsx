@@ -5,7 +5,7 @@ import { useState } from "react";
 import Lottie from 'react-lottie';
 import  animatedImmage from "../../public/images/animated/animated-image1.json"
 const Hero = () => {
-  const [email, setEmail] = useState("");
+  const [Phone, setPhone] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -40,10 +40,10 @@ const Hero = () => {
                 <form onSubmit={handleSubmit}>
                   <div className="flex flex-wrap gap-5    ">
                     <input
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
+                      value={Phone}
+                      onChange={(e) => setPhone(e.target.value)}
                       type="text"
-                      placeholder="Enter your email address"
+                      placeholder="Enter your Phone number"
                       className="rounded-full border border-stroke px-6 py-2.5 shadow-solid-2 focus:border-primary focus:outline-none dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
                     />
                     <button
