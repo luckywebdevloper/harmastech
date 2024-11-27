@@ -60,13 +60,13 @@ const About = () => {
               className="animate_right md:w-1/2"
             >
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-                Navigating Financial
+               Full API Integration
                 <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark">
                   Success Together
                 </span>
               </h2>
               <p>
-                At harmastech, we're more than just a software provider – we're
+                At Hermas Tech, we're more than just a software provider – we're
                 your trusted partner in navigating the complexities of the
                 financial markets. With a dedication to innovation, expertise,
                 and client satisfaction, we empower traders to achieve their
@@ -138,7 +138,7 @@ const About = () => {
                 </span>
               </h2>
               <p>
-                At harmastech, we're dedicated to providing innovative solutions
+                At Hermas Tech, we're dedicated to providing innovative solutions
                 that empower traders to succeed in dynamic financial markets.
                 With cutting-edge technology and a commitment to excellence, we
                 strive to revolutionize the way you approach trading. Join us on
