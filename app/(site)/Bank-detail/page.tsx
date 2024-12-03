@@ -24,7 +24,7 @@ const page = () => {
           </div>
           <div>
             <h1 className='relative mb-5 text-3xl font-semibold text-blue-700 left-25'>QR Transfer</h1>
-            <img src="/images/QR/QR.jpg" alt="" className='w-40 m-20 md:w-80' />
+            <img src="/images/QR.jpg" alt="" className='w-40 m-20 md:w-80' />
           </div>
       </div>
     </div>
