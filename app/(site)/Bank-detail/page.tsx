@@ -1,35 +1,92 @@
-import React from 'react'
+import React from 'react';
 
 const page = () => {
   return (
-    <div>
-      <h1 className='mt-10 text-3xl font-semibold text-center text-blue-500 md:text-5xl'>Bank Account Details</h1>
-      <div className='mt-20 md:flex justify-evenly'>
-          <div className='flex flex-col justify-center '>
-            <h1 className='text-xl text-gray-500 md:text-2xl'>
-                <span className='text-2xl text-black md:text-3xl'>Bank Name</span>- HDFC Bank
-            </h1>
-            <h1 className='mt-5 text-xl text-gray-500 md:text-2xl'>
-                <span className='text-2xl text-black md:text-3xl'>Account Holder Name</span>- Saksham Shrotriya
-            </h1>
-            <h1 className='mt-5 text-xl text-gray-500 md:text-2xl'>
-                <span className='text-2xl text-black md:text-3xl'>Account Number</span>- 50100311315845
-            </h1>
-            <h1 className='mt-5 mb-5 text-xl text-gray-500 md:text-2xl'>
-                <span className='text-2xl text-black md:text-3xl'>IFSC Code</span>- HDFC0001781
-            </h1>
-            <h1 className='mt-5 mb-20 text-xl text-gray-500 md:text-2xl'>
-                <span className='text-2xl text-black md:text-3xl'>UPI-ID</span>- sakshamshrotriyahcc@ybl
-            </h1>
-          </div>
-          <div>
-            <h1 className='relative mb-5 text-3xl font-semibold text-blue-700 left-25'>QR Transfer</h1>
-            <img src="/images/QR.jpg" alt="" className='w-40 m-20 md:w-80' />
-          </div>
+    <div className="overflow-x-hidden">
+      <h1 className="mt-10 text-3xl font-semibold text-center text-blue-500 md:text-5xl">
+        Bank Account Details
+      </h1>
+
+      <div className='flex flex-col gap-36'>
+      <div className="grid items-center gap-10 px-5 mt-20 md:grid-cols-3">
+        {/* Bank Logo */}
+        <div className="flex justify-center">
+          <img
+            src="/images/hdfc.png"
+            alt="HDFC Bank Logo"
+            className="w-40 md:w-72"
+          />
+        </div>
+
+        {/* Bank Details */}
+        <div className="flex flex-col justify-center text-center md:text-left">
+          <h1 className="mt-5 text-xl text-gray-500 md:text-xl">
+            <span className="text-xl text-black md:text-2xl">Account Holder Name:</span> Saksham Shrotriya
+          </h1>
+          <h1 className="mt-5 text-xl text-gray-500 md:text-xl">
+            <span className="text-xl text-black md:text-2xl">Account Number:</span> 50100311315845
+          </h1>
+          <h1 className="mt-5 text-xl text-gray-500 md:text-xl">
+            <span className="text-xl text-black md:text-2xl">IFSC Code:</span> HDFC0001781
+          </h1>
+          <h1 className="mt-5 text-xl text-gray-500 md:text-xl">
+            <span className="text-xl text-black md:text-2xl">UPI-ID:</span> sakshamshrotriyahcc@ybl
+          </h1>
+        </div>
+
+        {/* QR Code */}
+        <div className="flex flex-col items-center">
+          <h1 className="mb-5 text-3xl font-semibold text-blue-700">QR Transfer</h1>
+          <img
+            src="/images/QR.jpg"
+            alt="QR Code"
+            className="w-40 md:w-60"
+          />
+        </div>
+      </div>
+      
+
+
+
+      <div className="grid items-center gap-10 px-5 mt-20 md:grid-cols-3">
+       
+        <div className="flex justify-center">
+          <img
+            src="/images/axis.png"
+            alt="HDFC Bank Logo"
+            className="w-40 md:w-72"
+          />
+        </div>
+
+       
+        <div className="flex flex-col justify-center text-center md:text-left">
+          <h1 className="mt-5 text-xl text-gray-500 md:text-xl">
+            <span className="text-xl text-black md:text-2xl">Account Holder Name:</span> NA
+          </h1>
+          <h1 className="mt-5 text-xl text-gray-500 md:text-xl">
+            <span className="text-xl text-black md:text-2xl">Account Number:</span> NA
+          </h1>
+          <h1 className="mt-5 text-xl text-gray-500 md:text-xl">
+            <span className="text-xl text-black md:text-2xl">IFSC Code:</span> NA
+          </h1>
+          <h1 className="mt-5 text-xl text-gray-500 md:text-xl">
+            <span className="text-xl text-black md:text-2xl">UPI-ID:</span> NA
+          </h1>
+        </div>
+
+        
+        <div className="flex flex-col items-center">
+          <h1 className="mb-5 text-3xl font-semibold text-blue-700">QR Transfer</h1>
+          <img
+            src="/images/QR.jpg"
+            alt="QR Code"
+            className="w-40 md:w-60"
+          />
+        </div>
+      </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default page
-
+export default page;
