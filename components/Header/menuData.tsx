@@ -75,6 +75,12 @@ const menuData: Menu[] = [
     newTab: false,
     path: "/contact",
   },
+  {
+    id: 5,
+    title: "Bank-Detail",
+    newTab: false,
+    path: "/Bank-detail",
+  },
 ];
 
 export default menuData;
