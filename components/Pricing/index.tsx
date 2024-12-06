@@ -132,7 +132,7 @@ const Pricing = () => {
       ₹19999
     </h3>
     <p className="text-sm text-gray-600 dark:text-gray-400">
-      /Quarterly{" "}
+      /Monthly{" "}
       <span className="ml-1 text-xs text-gray-500 dark:text-gray-400">
         +18% GST
       </span>
@@ -220,7 +220,7 @@ const Pricing = () => {
       ₹29999
     </h3>
     <p className="text-sm text-gray-600 dark:text-gray-400">
-      /Half Year{" "}
+      /Monthly{" "}
       <span className="ml-1 text-xs text-gray-500 dark:text-gray-400">
         +18% GST
       </span>
@@ -313,7 +313,7 @@ const Pricing = () => {
       ₹49999
     </h3>
     <p className="text-sm text-gray-600 dark:text-gray-400">
-      /Yearly{" "}
+      /Monthly{" "}
       <span className="ml-1 text-xs text-gray-500 dark:text-gray-400">
         +18% GST
       </span>
